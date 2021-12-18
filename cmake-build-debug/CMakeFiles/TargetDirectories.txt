@@ -1,0 +1,3 @@
+C:/Users/laliv/CLionProjects/Amoba/cmake-build-debug/CMakeFiles/Amoba.dir
+C:/Users/laliv/CLionProjects/Amoba/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/laliv/CLionProjects/Amoba/cmake-build-debug/CMakeFiles/rebuild_cache.dir
