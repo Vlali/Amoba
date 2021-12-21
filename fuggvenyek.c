@@ -46,7 +46,7 @@ char masodik_jatekos_alakzata(char masodik_jatekos_neve[30],char elso_jatekos_al
             alakzat_valasztas = valaszthato_alakzatok[i];
         }
     }
-    printf("%s a %c karakterrel fogsz jatszani!\n",masodik_jatekos_neve,alakzat_valasztas);
+    printf("%s az %c karakterrel fogsz jatszani!\n",masodik_jatekos_neve,alakzat_valasztas);
     return alakzat_valasztas;
 }
 int elso_jatekos_szinv(char elso_jatekos_neve[30]){
@@ -112,7 +112,7 @@ int sor_valasztasa(char nev[30],char alakzat){
         printf("%s valaszd ki melyik sorban szeretned a %c-t elhelyezni(1-3): ",nev,alakzat);
         scanf("%d",&sor_valasztas);
         if(sor_valasztas<1 || sor_valasztas>3){
-            printf("\nA sor erteket 1-3 kozott kell megadnod.\n\n");
+            printf("\nA sor erteket 1-3 kozott kell megadnod!\n\n");
             continue;
         }
         break;
@@ -125,7 +125,7 @@ int oszlop_valasztas(char nev[30]){
         printf("\n%s valaszd ki melyik oszlopban szeretned az alakzatodat elhelyezni(1-3): ",nev);
         scanf("%d",&oszlop_valasztas);
         if(oszlop_valasztas<1 || oszlop_valasztas>3){
-            printf("\nAz oszlop erteket 1-3 kozott kell megadnod.\n");
+            printf("\nAz oszlop erteket 1-3 kozott kell megadnod!\n");
             continue;
         }
         break;
@@ -134,7 +134,7 @@ int oszlop_valasztas(char nev[30]){
 }
 int szabad_hely_ellenorzese(int sor,int oszlop,char jatek_tabla[3][3]){
     if(jatek_tabla[sor-1][oszlop-1]!='_'){
-        printf("\nA [%d,%d] kordinata foglalt.",sor,oszlop);
+        printf("\nA [%d,%d] kordinata foglalt!",sor,oszlop);
         return False;
     }
     return True;
