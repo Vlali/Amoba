@@ -46,14 +46,14 @@ char masodik_jatekos_alakzata(char masodik_jatekos_neve[30],char elso_jatekos_al
             alakzat_valasztas = valaszthato_alakzatok[i];
         }
     }
-    printf("%s a %c karakterrel fogsz jatszani\n",masodik_jatekos_neve,alakzat_valasztas);
+    printf("%s a %c karakterrel fogsz jatszani!\n",masodik_jatekos_neve,alakzat_valasztas);
     return alakzat_valasztas;
 }
 int elso_jatekos_szinv(char elso_jatekos_neve[30]){
     int valasztott_szin;
     printf("Valaszthato szinek:\n\t\t1-kek\n\t\t2-lila\n\t\t3-sarga\n\n");
     while(True){
-        printf("%s valaszd ki, hogy milyen szinu legyen a szoveg: ",elso_jatekos_neve);
+        printf("%s valaszd ki, hogy milyen szinu legyen a szoveg(szamot adj meg): ",elso_jatekos_neve);
         scanf("%d",&valasztott_szin);
         if(valasztott_szin<1 || valasztott_szin>3){
             printf("\nHibas erteket adtal meg!\n\n");
@@ -68,7 +68,7 @@ int masodik_jatekos_szinv(char masodik_jatekos_neve[30],int elso_jatekos_szin){
     char szinek[3][10]={"kek","lila","sarga"};
     printf("Valaszthato szinek:\n\t\t1-kek\n\t\t2-lila\n\t\t3-sarga\n\n");
     while(True){
-        printf("%s valaszd ki, hogy milyen szinu legyen a szoveg: ",masodik_jatekos_neve);
+        printf("%s valaszd ki, hogy milyen szinu legyen a szoveg(szamot adj meg): ",masodik_jatekos_neve);
         scanf("%d",&valasztott_szin);
         if(valasztott_szin<1 || valasztott_szin>3){
             printf("\nHibas erteket adtal meg!\n\n");
@@ -157,7 +157,7 @@ void dontetlen_kiiratasa(){
     system("cls");
     system("COLOR 07");
     printf("A jatek dontetlennel fejezodott be.\n\n");
-    printf("A jatek tabla ujra toltese");
+    printf("Jatek tabla ujra toltese");
     sleep(1);
     printf(".");
     sleep(1);
