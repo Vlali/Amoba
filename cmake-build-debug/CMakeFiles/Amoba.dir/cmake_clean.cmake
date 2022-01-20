@@ -3,7 +3,9 @@ file(REMOVE_RECURSE
   "Amoba.exe.manifest"
   "Amoba.pdb"
   "CMakeFiles/Amoba.dir/fuggvenyek.c.obj"
+  "CMakeFiles/Amoba.dir/fuggvenyek.c.obj.d"
   "CMakeFiles/Amoba.dir/main.c.obj"
+  "CMakeFiles/Amoba.dir/main.c.obj.d"
   "libAmoba.dll.a"
 )
 
